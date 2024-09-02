@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 export default function Home() {
     const [data, setdata] = useState("wait..")
     useEffect(() => {
-      fetch("http://localhost:5000/")
+      fetch("https://backend-testing-blond.vercel.app/")
       .then(res=>res.text())
       .then(response=>setdata(response))
     }, [])
